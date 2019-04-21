@@ -1,0 +1,95 @@
+html {
+  background-color: red;
+}
+
+body {
+  width: 75%;
+  margin: 0 auto;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+#bouncyburger {
+  display: block;
+  margin: auto;
+  height: 180px;
+  width: 180px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Faster One", cursive;
+  font-size: 50px;
+  margin: 50px;
+}
+
+.burgerAvailable {
+  font-family: "Dokdo", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(99, 172, 99);
+  border: none;
+}
+
+.burgerAvailable:hover {
+  background-color: #81ff94;
+  color: darkgreen;
+}
+
+.burgerEaten {
+  font-family: "Dokdo", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(198, 97, 97);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Faster One", cursive;
+  font-size: 40px;
+  margin: 50px;
+}
+
+.formContainer {
+  background-color: yellow;
+}
+
+.addBurgerButton {
+  font-family: "Dokdo", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+
+  border-radius: 25px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: black;
+  color: yellow;
+  border: solid red 2px;
+}
+.addBurgerButton:hover {
+  background-color: red;
+  color: yellow;
+  border: solid black 2px;
+}
+
+.burgerFooter {
+  background-color: red;
+  padding: 20px 0;
+}
