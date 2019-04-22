@@ -12,12 +12,7 @@ body {
   background-color: yellow;
 }
 
-#bouncyburger {
-  display: block;
-  margin: auto;
-  height: 180px;
-  width: 180px;
-}
+
 
 h1 {
   text-align: center;

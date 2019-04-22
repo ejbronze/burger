@@ -1,31 +1,36 @@
+{{!-- Setup the main.handlebars file so it's able to be used by Handlebars. --}}
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Burger App</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Bootstap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css">
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Custom Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Dokdo|Faster+One" rel="stylesheet">
+		<!-- Javascript -->
+		<script src="/assets/js/burger.js"></script>
+	</head>
+	<body>
+		
+		{{{ body }}}
 
-<head>
-	<meta charset="UTF-8">
-	{{!-- Google Fonts --}}
-	<link href="https://fonts.googleapis.com/css?family=Dokdo|Faster+One" rel="stylesheet">
-
-	<!-- Compiled and minified Materialize CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-	<title>Burger Menu</title>
-</head>
-
-<body>
-	<img src="/assets/img/burgerbouncygif.gif" id="bouncyburger">
-
-	{{{ body }}}
-
-	<footer class="burgerFooter">
-		<div class="footer-copyright">
-			<div class="container">
-				<span class="grey-text text-lighten-4">© Eddie Jaquez 2019</span>
-				<a class="grey-text text-lighten-4 right" href="https://github.com/ejbronze/burger">Github Repo</a>
+		<footer class="burgerFooter">
+			<div class="footer-copyright">
+				<div class="container">
+					<span class="grey-text text-lighten-4">© Eddie Jaquez 2019</span>
+					<a class="grey-text text-lighten-4 right" href="https://github.com/ejbronze/burger">Github Repo</a>
+				</div>
 			</div>
-		</div>
-	</footer>
-</body>
-
+		</footer>
+	</body>
 </html>
