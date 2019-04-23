@@ -1,59 +1,68 @@
 {{!-- Setup the index.handlebars to have the template that Handlebars can render onto. --}}
-
-<nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand"><h2>Make a Burger</h2></a>
-  <form class="form-inline create-form">
-        <input class="form-control mr-sm-2" type="text" id="newburger" name="burger" placeholder="New burger">
-        {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
-        <button type="submit" class="btn btn-outline-success my-2 my-sm-0" id="addburger"><span class="fa fa-thumbs-up"></span></button>
-  </form>
+<nav class="text-center">
+    <h2>Eat the Burger</h2>
+    <p>Make burgers, eat burgers.</p>
 </nav>
-
 <div class="container">
-<main>
-    <div class="jumbotron">
-        <h1>Eat the Burger</h1>
-        <p>Make burgers, eat burgers.</p>
-        <br>
-    </div><!-- /jumbotron -->
+    <main>
 
-    <div class="row">
-        <!-- Undevoured Burgers -->
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
-                <div class="panel-body">
-                    <ul>
-                        {{#each burgers}}
+        <div class="row">
+            <div class="col-sm-6">
+                <h3> Make a Burger </h3>
+                <form class="form-inline create-form">
+                    <input class="form-control mr-sm-2" type="text" id="newburger" name="burger"
+                        placeholder="New burger">
+                    {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
+                    <button type="submit" class="btn btn-outline-success my-2 my-sm-0" id="addburger"><span
+                            class="fa fa-plus"></span></button>
+                </form>
+                <br>
+            </div>
+            <div class="col-sm-6">
+                <img src="https://media1.giphy.com/media/1dLwYRWAUMwwxIOnwv/giphy.gif" alt="bouncyburger"
+                    id="bouncyburger" />
+            </div>
+        </div>
+        <div class="row">
+            <!-- Undevoured Burgers -->
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
+                    <div class="panel-body">
+                        <ul>
+                            {{#each burgers}}
                             {{#unless devoured}}
-                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                                <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
-                                <hr>
+                            <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                            <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
+                                data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
+                            <hr>
                             {{/unless}}
-                        {{/each}}
-                    </ul>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Devoured Burgers -->
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
-                <div class="panel-body">
-                    <ul>
-                        {{#each burgers}}
+            <!-- Devoured Burgers -->
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
+                    <div class="panel-body">
+                        <ul>
+                            {{#each burgers}}
                             {{#if devoured}}
-                                <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                                <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
-                                <hr>
+                            <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+                            <button type="button" class="trashburger btn btn-danger" id="trashbutton"
+                                data-id="{{this.id}}" data-newDevoured="{{devour}}"><span
+                                    class="fa fa-trash"></span></button>
+                            <hr>
                             {{/if}}
-                        {{/each}}
-                    </ul>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div><!-- /row -->
-</main>
+        </div><!-- /row -->
+    </main>
 
 
 </div><!-- /container -->

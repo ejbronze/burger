@@ -1,54 +1,52 @@
 html {
-    background-color: red;
+  background-color: red;
 }
-  
-  body {
-    background-color: yellow;
+
+body {
+  background-color: yellow;
 }
 p {
-    font-family: "Dokdo", cursive;
+  font-family: "Dokdo", cursive;
+  color: red;
+  font-size: 32px;
 }
 #bouncyburger {
-    display: block;
-    margin: auto;
-    height: 180px;
-    width: 180px;
-}
-
-.jumbotron {
-    margin-top: 10px;
-    background-color: yellow;
+  display: block;
+  margin: auto;
+  height: 180px;
+  width: 180px;
 }
 h2 {
-    font-family: "Faster One", cursive;
+  font-family: "Faster One", cursive;
+  font-size: 50px;
 }
-.jumbotron > h1 {
-    font-family: "Faster One", cursive;
-    font-size: 50px;
+#addburger {
+  color: white;
+  background-color: #5cb85c;
 }
-
 #newburger {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 #lefthead {
-    background-color: #5cb85c;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
 }
 
-#eatbutton, #trashbutton {
-    float: right;
+#eatbutton,
+#trashbutton {
+  float: right;
 }
 
 #righthead {
-    background-color: red;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
 }
 .burgerFooter {
-    background-color: red;
-    padding: 20px 0;
-  }
+  background-color: red;
+  padding: 20px 0;
+}
