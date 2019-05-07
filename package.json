@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/ejbronze/burger#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "method": "^2.0.0",
     "method-override": "^3.0.0",
     "mysql": "^2.17.1",
     "override": "0.0.1"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,4 +1,4 @@
-# burger
+# Eat Da Burger
 
 ## Overview
 
@@ -15,4 +15,8 @@ In this assignment, I created a burger logger with MySQL, Node, Express, Handleb
 - The app will store every burger in a database, whether devoured or not.
 
 Heroku Link
-https://glacial-refuge-63509.herokuapp.com/
+~~https://glacial-refuge-63509.herokuapp.com/~~
+
+https://eatdaburger-ejbronze.herokuapp.com/
+
+WORK IN PROGRESS
