@@ -1,6 +1,6 @@
 # Eat Da Burger
 
-![Homepage](public/assets/img/burgerbouncygif.gif)
+<img src="public/assets/img/burgerbouncygif.gif" height="48" width="48" />
 
 ## Overview
 
