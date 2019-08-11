@@ -1,5 +1,7 @@
 # Eat Da Burger
 
+![Homepage](public/assets/img/burgerbouncygif.gif)
+
 ## Overview
 
 In this assignment, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I followed the MVC design pattern; using Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
@@ -15,7 +17,6 @@ In this assignment, I created a burger logger with MySQL, Node, Express, Handleb
 - The app will store every burger in a database, whether devoured or not.
 
 Heroku Link
-~~https://glacial-refuge-63509.herokuapp.com/~~
 
 https://eatdaburger-ejbronze.herokuapp.com/
 
